@@ -226,7 +226,18 @@
 <hr style="border:1px dashed #8B0000; margin: 30px 0;">
 
 ### <img src="https://img.shields.io/badge/05._SYSTEM_TELEMETRY_&_STATS-000000?style=for-the-badge&logo=github&logoColor=FF0000&labelColor=0a0a0a" alt="System Stats" />
+<div align="center">
+  <!-- প্রাইমারি: Matrix Red Theme -->
+  <img src="https://raw.githubusercontent.com/muhammadshourov404/muhammadshourov404/output/github-snake-matrix-red.svg" 
+       width="95%" 
+       alt="Matrix Red Contribution Snake - Vampire Style" />
+</div>
 
+<!-- অথবা Dark fallback -->
+<!-- <img src="https://raw.githubusercontent.com/muhammadshourov404/muhammadshourov404/output/github-snake-dark.svg" width="95%" alt="Dark Snake" /> -->
+
+<!-- অথবা Vampire variant -->
+<!-- <img src="https://raw.githubusercontent.com/muhammadshourov404/muhammadshourov404/output/github-snake-vampire.svg" width="95%" alt="Vampire Red Snake" /> -->
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=muhammadshourov404&show_icons=true&theme=radical&hide_border=true&bg_color=050505&title_color=FF0000&icon_color=8B0000&text_color=AAAAAA&count_private=true&include_all_commits=true&rank_icon=github&show_rank=true" width="48%" alt="GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=muhammadshourov404&theme=blood&hide_border=true&background=050505&ring=FF0000&fire=FF0000&currStreakNum=FF4500&sideNums=8B0000" width="48%" alt="GitHub Streak" />
