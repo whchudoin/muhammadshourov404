@@ -1,0 +1,55 @@
+name: Generate Contribution Snake (Vampire Theme)
+
+on:
+  schedule:
+    # প্রতি ১২ ঘণ্টা পরপর (00:00 এবং 12:00 UTC)
+    - cron: "0 */12 * * *"
+  workflow_dispatch:          # ম্যানুয়ালি রান করার অপশন
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'           # README চেঞ্জ হলে অপ্রয়োজনীয় রান না হয়
+
+permissions:
+  contents: write           # আউটপুট ব্রাঞ্চে পুশ করার জন্য দরকার
+
+jobs:
+  generate:
+    name: Generate Snake Animation - Vampire Red Theme
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # রিপোজিটরি চেকআউট
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Snake জেনারেট করা (Platane/snk v3)
+      - name: Generate GitHub Contribution Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            output/github-contribution-grid-snake.svg
+            output/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=8B0000,FF0000,FF4500,DC143C,FFFFFF
+            output/github-contribution-grid-snake-vampire.svg?color_snake=8B0000,FF0000,FF4500,DC143C,000000&color_dots=0a0a0a,1a0000,2a0000,4a0000,8B0000,FF0000,FF4500
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # আউটপুট ফাইলগুলোকে output ব্রাঞ্চে পুশ করা
+      - name: Deploy snake files to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: output
+          commit_message: "chore: update contribution snake animation [ci skip]"
+          fqdn: ""  # custom domain না থাকলে খালি রাখো
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ক্যাশ ক্লিয়ার (অপশনাল, কিন্তু স্টেবল রাখতে ভালো)
+      - name: Cleanup workflow artifacts
+        if: always()
+        run: |
+          echo "Workflow completed - snake files pushed to output branch"
